@@ -1,4 +1,5 @@
 #include "EEPROMAudit.h"
+#include <Arduino.h>
 
 bool inspectCellHardware(uint16_t addr) {
     uint8_t backup = EEPROM.read(addr);
